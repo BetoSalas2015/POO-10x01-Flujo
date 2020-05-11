@@ -1,0 +1,4 @@
+# Archivos a ignorar en el repositorio
+*.class
+
+# Carpetas a ignorar en el repositorio
