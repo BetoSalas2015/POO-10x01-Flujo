@@ -2,7 +2,7 @@
  * Write a description of class ReadFile here.
  * 
  * @author Roberto Salazar Márquez
- * @version 1.0
+ * @version 1.1
  */
 import java.awt.*;
 import java.awt.event.*;
@@ -12,7 +12,7 @@ public class ReadFile extends Frame
 {
     // instance variables - replace the example below with your own
     private TextArea editor;
-    private FileInputStream entrada;
+    private FileReader entrada;
 
     /**
      * Constructor for objects of class ReadFile
@@ -26,7 +26,7 @@ public class ReadFile extends Frame
         add(editor, "Center");
         
         try {
-            entrada = new FileInputStream("ReadFile.java");
+            entrada = new FileReader("ReadFile.java");
             
             while( (c = entrada.read()) != -1) 
                 editor.append( String.valueOf((char) c ));
